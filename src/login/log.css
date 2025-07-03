@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@plugin "daisyui"{
+  themes: light --default, dark --prefersdark;
+}
+
+.mod{
+  background-color: rgb(28, 31, 39);
+  margin: 20px;
+  padding: 20px;
+  height: 100px;
+  width: 600px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px 5px rgb(0, 0, 0);
+}
+
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
+}
