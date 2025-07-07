@@ -64,18 +64,20 @@ function Log(){
             </div>
         </div>
         </div>
-        <Dialog className="mod" header="Inicio de Sesion exitoso" visible={visible} style={{ width: '50vw' }} onHide={() => {if (!visible) return; setVisible(false); navigate("/", { replace: true })}}>
+        <Dialog className="mod text-amber-50" header="Inicio de Sesion exitoso" visible={visible} style={{ width: '50vw' }} onHide={() => {if (!visible) return; setVisible(false); navigate("/", { replace: true })}}>
             <p className="m-0">
                 Bienvenido de nuevo {user} a autsolcursos
             </p>
         </Dialog>
     
         
-        <Dialog className="mod" header="Inicio de sesion Fallido" visible={visible2} style={{ width: '50vw' }} onHide={() => {if (!visible2) return; setVisible2(false); navigate("/Login", { replace: true })}}>
+        <Dialog className="mod text-amber-50" header="Inicio de sesion Fallido" visible={visible2} style={{ width: '50vw' }} onHide={() => {if (!visible2) return; setVisible2(false); navigate("/Login", { replace: true })}}>
                 <p className="m-0">
                     El usuario y/o contraseña ingresados son incorrectos
                 </p>
         </Dialog>
+
+        
         </>
     )
 }

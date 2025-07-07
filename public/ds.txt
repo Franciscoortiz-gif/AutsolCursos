@@ -1,0 +1,25 @@
+ <div className="hero bg-base-200 min-h-screen p-20">
+        <div className="hero-content flex-col lg:flex-row-reverse">
+            <div className="text-center lg:text-left">
+            <h1 className="text-5xl font-bold">INICIAR SESION         </h1>
+            <p className="py-6">
+                Bienvenido de nuevo {user}
+            </p>
+            </div>
+            <div className="card bg-base-100 w-full max-w-md shrink-0 shadow-2xl ">
+            <form onSubmit={ev =>{ev.preventDefault();setLoad("loading loading-spinner loading-xs"); login(user, password)}}>
+                <div className="card-body">
+                    <fieldset className="fieldset">
+                    <label className="label text-lg">Correo Electronico</label>
+                    <input type="email" className="input text-lg" placeholder="example@example.com"  value={user} onChange={ev => setUser(ev.target.value)} required/>
+                    <label className="label text-lg">Contraseña</label>
+                    <input type="password" className="input text-lg" placeholder="******" value={password} onChange={ev => setPasword(ev.target.value)} required/>
+                    <div><Link to={"/forgot"} className="text-lg">No recuerdas tu contraseña?</Link></div>
+                    <button className="btn btn-neutral mt-4 text-lg"><span className={load}></span>Login</button>
+                    <div><Link to={"/register"} className="text-lg">No tienes cuenta? Registrate aqui</Link></div>
+                    </fieldset>
+                </div>
+            </form>
+            </div>
+        </div>
+        </div>

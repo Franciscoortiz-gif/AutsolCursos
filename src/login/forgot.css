@@ -3,12 +3,7 @@
   themes: light --default, dark --prefersdark;
 }
 
-.forgot{
-    background-color: rgb(39, 38, 49);
-    width: 90%;
-    height: auto;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px 5px black;
+#dd{
+  background-color: rgb(31, 33, 44);
+  border-radius: 5px;
 }
