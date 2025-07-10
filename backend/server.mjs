@@ -20,10 +20,8 @@ app.post("/users/regist/valid/", async (req,res) => {
         await Pool.query("INSERT INTO users (name, email, password) VALUES (?,?,?)",[data.user_name, data.email, pass])
         await Pool.query("COMMIT")
         salida = 200
-        Pool.end();
     }else{
         salida = 404
-        Pool.end();
     }
     res.send(salida)
 })

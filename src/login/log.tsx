@@ -14,7 +14,7 @@ function Log(){
     const [visible, setVisible] = useState(false);
     const [visible2, setVisible2] = useState(false);
     const navigate = useNavigate()
-    const [cookie, setCokies, removeCokies] = useCookies(['user']);
+    const [cookie, setCokies] = useCookies(['user']);
     const [load, setLoad] = useState("loading loading-spinner loading-xs hide")
     async function login(userr,passw) {
         await axios.post("http://localhost:5002/users/login/",{
