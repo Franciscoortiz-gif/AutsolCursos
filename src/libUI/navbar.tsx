@@ -158,7 +158,7 @@ export default function Navbarlis() {
   );
  
   return (
-    <Navbar className="bg-blue-500 rounded-none border-none mx-auto w-full px-4 py-2 lg:px-8 lg:py-4 animate-fade animate-duration-1000 animate-ease-in-out animate-alternate">
+    <Navbar className="bg-[#1869E2] rounded-none border-none mx-auto w-full px-4 py-2 lg:px-8 lg:py-4 animate-fade animate-duration-1000 animate-ease-in-out animate-alternate">
       <div className="container mx-auto flex justify-between items-center  text-blue-gray-900 animate-fade-up animate-once animate-duration-1000">
         <Typography
           as="a"
@@ -250,7 +250,7 @@ export default function Navbarlis() {
               <Link to={"/Register"}><span className="text-amber-50">Registrarse</span></Link>
             </button>
           </div>
-              <a href="/" className="cursor-pointer z-0">
+              <a hidden={!isHidden} href="/" className="cursor-pointer z-0">
                 <div className="flex flex-row z-10">
                     <div>
                       <Avatar className="w-full h-14">
