@@ -1,7 +1,9 @@
 import './App.css'
-import Navbarlis from './libUI/navbar';
-import Pie from './libUI/foter';
-import Store from './libUI/STORE';
+import Navbarlis from './Home-Utils/navbar';
+import Pie from './Home-Utils/foter';
+import Store from './Home-Utils/STORE';
+import Bestcourses from './Home-Utils/bestcourses';
+import Instructors from './Home-Utils/teachers';
 
 function Home(){
 
@@ -9,6 +11,8 @@ function Home(){
     <>
       <Navbarlis></Navbarlis>
       <Store></Store>
+      <Bestcourses></Bestcourses>
+      <Instructors></Instructors>
       <Pie></Pie>
     </>
     )
